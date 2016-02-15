@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "stack.h"
-
+/* get input by user and reverse it by using stack */
 int main(){
 	int * head = NULL;
 	char str [100] ;

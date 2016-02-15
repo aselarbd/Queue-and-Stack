@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "stack.h"
 
+/* tesing program to revrse by recersion  */
 int main(){
 	struct stack * head = stackCreate();
 	int i=0;

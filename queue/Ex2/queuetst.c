@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "queue.h"
 
+/* queue testing program */
+
 int main(){
 	int i=0;
 	struct queue * head = createQueue();

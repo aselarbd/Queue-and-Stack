@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "stack.h"
-
+/* check stack functionality */
 int main(){
 	int * head = NULL;
 	head= stackCreate();

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "stack.h"
-
+/* check funtionality of stack implementation using linklist */
 int main(){
 	struct stack * head = stackCreate();
 	int i=0;

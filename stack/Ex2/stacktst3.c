@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "stack.h"
-
+/* tesing program to revrse by iteration  */
 int main(){
 	struct stack * head = stackCreate();
 	int i=0;

@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "stack2.h"
-
+/* more dynamic 2 stacks implementation in same array testing program */
 int main(){
 	int * head = NULL;
 	int i;

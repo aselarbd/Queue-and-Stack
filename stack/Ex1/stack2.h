@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
+/* Implenting stack as more dynamic way */
 
 int * stackCreate(){
 	int * tmp = malloc(sizeof(int)*102);
@@ -9,12 +9,12 @@ int * stackCreate(){
 	tmp[1]= 101;
 	return tmp;
 }
-
+/* Desttroy stack  and free memory */
 int * stackDestroy(int * head){
 	free(head);
 	return NULL;
 }
-
+/* put elemts to stack  */
 int stackPush(int data,int * head,int stack){
 	if(stack == 0 && (head[0]<head[1])){
 		head[head[0]]=data;
@@ -28,7 +28,7 @@ int stackPush(int data,int * head,int stack){
 	}	
 	return -1;
 }
-
+/* getting elements out by stack */
 int stackPop(int * head,int stack){
 	if(stack==0 && head[0]>2){
 		int val =head[head[0]-1];
@@ -44,7 +44,7 @@ int stackPop(int * head,int stack){
 	}
 	return -1;
 }
-
+/* getting stack peek elemet */
 int stackPeek(int * head,int stack){
 	if(stack ==0)
 		return head[head[0]-1];
@@ -52,7 +52,7 @@ int stackPeek(int * head,int stack){
 		return head[head[1]+1];
 	return -1;
 }
-
+/* checking stack is empty */
 int StackIsEmpty(int * head,int stack){
 	if(stack==0 && head[0]==2)
 		return 1;
@@ -60,7 +60,7 @@ int StackIsEmpty(int * head,int stack){
 		return 1;	
 	return 0;
 }
-
+/* checking stack is full */
 int StackIsFull(int * head,int stack){
 	if(head[0]<head[1])
 		return 1;
